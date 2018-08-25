@@ -1,0 +1,1 @@
+SELECT * FROM web_returns, household_demographics WHERE wr_refunded_hdemo_sk = hd_demo_sk

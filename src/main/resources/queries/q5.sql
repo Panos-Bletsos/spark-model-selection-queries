@@ -1,0 +1,1 @@
+SELECT * FROM store_sales, customer_demographics WHERE ss_cdemo_sk = cd_demo_sk

@@ -1,0 +1,1 @@
+SELECT * FROM catalog_returns, catalog_page WHERE cr_catalog_page_sk = cp_catalog_page_sk
