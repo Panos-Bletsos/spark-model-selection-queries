@@ -30,7 +30,7 @@ object TestTPCDSQueries extends App {
     val queries = getQueries(queryNames).zipWithIndex
     spark.sql(s"use $db")
     1 to iterations foreach(i => queries.foreach { q =>
-      spark.sparkContext.queryName = s"iter_$i-query_${q._2}"
+      spark.sparkContext.queryName = s"query${q._2}$db"
       spark.sql(q._1).count
     })
   }
